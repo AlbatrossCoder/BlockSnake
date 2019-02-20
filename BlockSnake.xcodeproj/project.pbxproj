@@ -15,6 +15,10 @@
 		7710FE0821FAF09D00340375 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7710FE0721FAF09D00340375 /* main.m */; };
 		777E657722019853004C602A /* DirectionControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 777E657622019853004C602A /* DirectionControl.m */; };
 		777E657B2201A459004C602A /* DirectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 777E657A2201A459004C602A /* DirectModel.m */; };
+		778DA2CF2211628300375700 /* SnakeHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 778DA2CE2211628300375700 /* SnakeHead.m */; };
+		778DA2D42211659A00375700 /* snakeEyes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 778DA2D32211659A00375700 /* snakeEyes@2x.png */; };
+		778DA2D722116AE100375700 /* SnakeBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 778DA2D622116AE100375700 /* SnakeBody.m */; };
+		778DA2D9221170B000375700 /* snakeHead_img@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 778DA2D8221170B000375700 /* snakeHead_img@2x.png */; };
 		77AC633E22004D9600BD6411 /* MyTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 77AC633D22004D9600BD6411 /* MyTileSet.sks */; };
 		77AC634022004DF600BD6411 /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77AC633F22004DF600BD6411 /* Asset.xcassets */; };
 		77AC63422200523F00BD6411 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 77AC63412200523F00BD6411 /* GameScene.sks */; };
@@ -37,6 +41,12 @@
 		777E657822019E23004C602A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		777E65792201A459004C602A /* DirectModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectModel.h; sourceTree = "<group>"; };
 		777E657A2201A459004C602A /* DirectModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirectModel.m; sourceTree = "<group>"; };
+		778DA2CD2211628300375700 /* SnakeHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnakeHead.h; sourceTree = "<group>"; };
+		778DA2CE2211628300375700 /* SnakeHead.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeHead.m; sourceTree = "<group>"; };
+		778DA2D32211659A00375700 /* snakeEyes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snakeEyes@2x.png"; sourceTree = "<group>"; };
+		778DA2D522116AE100375700 /* SnakeBody.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnakeBody.h; sourceTree = "<group>"; };
+		778DA2D622116AE100375700 /* SnakeBody.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SnakeBody.m; sourceTree = "<group>"; };
+		778DA2D8221170B000375700 /* snakeHead_img@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snakeHead_img@2x.png"; sourceTree = "<group>"; };
 		77AC633D22004D9600BD6411 /* MyTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyTileSet.sks; sourceTree = "<group>"; };
 		77AC633F22004DF600BD6411 /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asset.xcassets; sourceTree = "<group>"; };
 		77AC63412200523F00BD6411 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -83,9 +93,46 @@
 				7710FDF921FAF09C00340375 /* GameScene.m */,
 				77AC63412200523F00BD6411 /* GameScene.sks */,
 				77AC633D22004D9600BD6411 /* MyTileSet.sks */,
+				778DA2D02211657600375700 /* Source */,
+				7726FADC22054BE0004EC649 /* Hinder */,
+				7726FAD922054B96004EC649 /* Snake */,
 				777E6574220187BB004C602A /* DirectionControl */,
 			);
 			path = BlockSnake;
+			sourceTree = "<group>";
+		};
+		7726FAD922054B96004EC649 /* Snake */ = {
+			isa = PBXGroup;
+			children = (
+				7726FADB22054BAA004EC649 /* Body */,
+				7726FADA22054B9F004EC649 /* Head */,
+			);
+			name = Snake;
+			sourceTree = "<group>";
+		};
+		7726FADA22054B9F004EC649 /* Head */ = {
+			isa = PBXGroup;
+			children = (
+				778DA2CD2211628300375700 /* SnakeHead.h */,
+				778DA2CE2211628300375700 /* SnakeHead.m */,
+			);
+			name = Head;
+			sourceTree = "<group>";
+		};
+		7726FADB22054BAA004EC649 /* Body */ = {
+			isa = PBXGroup;
+			children = (
+				778DA2D522116AE100375700 /* SnakeBody.h */,
+				778DA2D622116AE100375700 /* SnakeBody.m */,
+			);
+			name = Body;
+			sourceTree = "<group>";
+		};
+		7726FADC22054BE0004EC649 /* Hinder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Hinder;
 			sourceTree = "<group>";
 		};
 		777E6574220187BB004C602A /* DirectionControl */ = {
@@ -97,6 +144,31 @@
 				777E657A2201A459004C602A /* DirectModel.m */,
 			);
 			name = DirectionControl;
+			sourceTree = "<group>";
+		};
+		778DA2D02211657600375700 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				778DA2D22211658F00375700 /* Icon */,
+				778DA2D12211658700375700 /* Images */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		778DA2D12211658700375700 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				778DA2D8221170B000375700 /* snakeHead_img@2x.png */,
+				778DA2D32211659A00375700 /* snakeEyes@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		778DA2D22211658F00375700 /* Icon */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Icon;
 			sourceTree = "<group>";
 		};
 		77AC633022002F5F00BD6411 /* SupportFiles */ = {
@@ -168,6 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				77AC633E22004D9600BD6411 /* MyTileSet.sks in Resources */,
+				778DA2D42211659A00375700 /* snakeEyes@2x.png in Resources */,
+				778DA2D9221170B000375700 /* snakeHead_img@2x.png in Resources */,
 				7710FE0021FAF09C00340375 /* Main.storyboard in Resources */,
 				77AC63422200523F00BD6411 /* GameScene.sks in Resources */,
 				77AC634022004DF600BD6411 /* Asset.xcassets in Resources */,
@@ -188,6 +262,8 @@
 				7710FE0821FAF09D00340375 /* main.m in Sources */,
 				7710FDF321FAF09C00340375 /* AppDelegate.m in Sources */,
 				777E657722019853004C602A /* DirectionControl.m in Sources */,
+				778DA2D722116AE100375700 /* SnakeBody.m in Sources */,
+				778DA2CF2211628300375700 /* SnakeHead.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

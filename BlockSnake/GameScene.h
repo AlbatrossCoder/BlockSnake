@@ -7,7 +7,8 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "DirectionControl.h"
 
-@interface GameScene : SKScene
+@interface GameScene : SKScene <directionDelegate>
 
 @end

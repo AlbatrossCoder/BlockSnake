@@ -10,7 +10,7 @@
 #import "GameScene.h"
 #import "DirectionControl.h"
 
-@interface GameViewController ()<directionDelegate>
+@interface GameViewController ()
 {
     DirectionControl * controllRod;
 }
@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 
     // Load the SKScene from 'GameScene.sks'
     GameScene *scene = (GameScene *)[SKScene nodeWithFileNamed:@"GameScene"];
@@ -37,22 +38,8 @@
     
     controllRod = [[DirectionControl alloc]init];
     [controllRod setPosition:CGPointMake(30.0+60, IPHONE_HEIGHT-30.0-60) radius:60.0];
-    controllRod.delegate = self;
+    controllRod.delegate = scene;
     [self.view addSubview:controllRod];
-}
-
-#pragma mark - DirectionDelegate
-
--(void)didPressControlWithDirection:(CGFloat)rad{
-    
-}
-
--(void)didChangeDirection:(CGFloat)rad{
-    
-}
-
--(void)pressControlCancelled{
-    
 }
 
 #pragma mark - Other

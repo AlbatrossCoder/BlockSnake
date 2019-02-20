@@ -87,18 +87,30 @@
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     for (UITouch * touch in touches) {
         [self updateCircleCenterWithPoint:[touch locationInView:self]];
+        
+        if(self.delegate){
+            [self.delegate didPressControlWithDirection:[model getRadWithMarkPoint:[touch locationInView:self]]];
+        }
     }
 }
 
 -(void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     for (UITouch * touch in touches) {
         [self updateCircleCenterWithPoint:[touch locationInView:self]];
+        
+        if(self.delegate){
+            [self.delegate didChangeDirection:[model getRadWithMarkPoint:[touch locationInView:self]]];
+        }
     }
 }
 
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     // 复位
     circle.center = CGPointMake(self.frame.size.width/2, self.frame.size.height/2);
+    
+    if(self.delegate){
+        [self.delegate pressControlCancelled];
+    }
 }
 
 @end
