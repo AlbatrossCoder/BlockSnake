@@ -406,7 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TTP59CU7D;
+				DEVELOPMENT_TEAM = 2SLL3QJVYW;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BlockSnake/PrefixHeader.pch";
 				INFOPLIST_FILE = BlockSnake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -425,7 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6TTP59CU7D;
+				DEVELOPMENT_TEAM = 2SLL3QJVYW;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BlockSnake/PrefixHeader.pch";
 				INFOPLIST_FILE = BlockSnake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
